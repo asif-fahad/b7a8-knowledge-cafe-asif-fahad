@@ -7,10 +7,10 @@ import Sideblog from './components/Sideblog/Sideblog';
 const App = () => {
   return (
     <div>
-      <div>
+      <div className='mx-auto'>
         <Header></Header>
       </div>
-      <div className='flex'>
+      <div className='w-full mx-auto flex gap-4'>
         <div>
           <Blogs></Blogs>
         </div>
