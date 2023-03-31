@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({ handleBookMark, handleReadMin }) => {
-    const [blogs, setBlogs] = useState([]);
+const Blogs = ({ blogs, handleBookMark, handleReadMin }) => {
 
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setBlogs(data));
-
-    }, [])
 
 
     return (

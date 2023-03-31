@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Blogs from './components/Blogs/Blogs';
 import Header from './components/Header/Header';
 import Sideblog from './components/Sideblog/Sideblog';
@@ -8,14 +8,22 @@ import './App.css'
 
 const App = () => {
 
-  const handleBookMark = () => {
-    console.log("aaaa");
+  const handleBookMark = (bookmarkid) => {
+    console.log("bookmark", bookmarkid);
   };
 
-  const handleReadMin = () => {
-    console.log("bbbbb")
+  const handleReadMin = (readid) => {
+    console.log("read min", readid)
   }
 
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => setBlogs(data));
+
+  }, [])
 
 
   return (
@@ -25,7 +33,7 @@ const App = () => {
       </div>
       <div className='container mx-auto flex md:flex-col lg:flex-row gap-4 '>
 
-        <Blogs handleBookMark={handleBookMark} handleReadMin={handleReadMin}></Blogs>
+        <Blogs blogs={blogs} handleBookMark={handleBookMark} handleReadMin={handleReadMin}></Blogs>
 
 
         <Sideblog ></Sideblog>
