@@ -7,7 +7,7 @@ const Sideblog = ({ bookmark, readTime }) => {
             <div>
                 <SpentTime readTime={readTime}></SpentTime>
             </div>
-            <h1 className='bg-indigo-500 mt-2 p-7 '><span className='font-bold'>Bookmarked Blogs:</span> {bookmark.length} {
+            <h1 className='bg-indigo-500 mt-2 p-7 w-96'><span className='font-bold'>Bookmarked Blogs:</span> {bookmark.length} {
                 bookmark.map(bk => < div className='bg-indigo-100 mt-2 p-7' >
 
                     {bk.blogTitle} </div>)

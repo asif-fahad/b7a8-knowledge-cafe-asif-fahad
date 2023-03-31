@@ -3,7 +3,7 @@ import React from 'react';
 const Questions = () => {
     return (
         <div>
-            <h1 className='text-lg font-black'>Questions About React</h1>
+            <h1 className='text-xl font-black text-center'>Questions About React</h1>
             <div>
                 <div className='font-bold'>
                     1. Props vs State

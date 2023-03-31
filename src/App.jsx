@@ -56,7 +56,7 @@ const App = () => {
       <div className='mx-auto'>
         <Header></Header>
       </div>
-      <div className='container mx-auto flex md:flex-col lg:flex-row gap-4 '>
+      <div className='container mx-auto w-full flex md:flex-col lg:flex-row gap-4 '>
 
         <Blogs blogs={blogs} handleBookMark={handleBookMark} handleReadMin={handleReadMin}></Blogs>
 

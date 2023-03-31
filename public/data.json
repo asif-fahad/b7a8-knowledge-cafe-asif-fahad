@@ -28,8 +28,8 @@
     },
     {
         "id": "6228ffbbbbb301f4636b6d94",
-        "author": "Asif Fahad",
-        "authorImage": "../src/images/fahad.png",
+        "author": "Elon Musk",
+        "authorImage": "https://randomuser.me/api/portraits/men/80.jpg",
         "blogTitle": "Why is the Second Argument in JSON.stringify() usually null?",
         "blogImage": "https://img.freepik.com/premium-photo/abstract-technology-binary-code-background_34629-592.jpg?w=900",
         "readTime": 15,
