@@ -1,14 +1,18 @@
 import React from 'react';
 import SpentTime from '../SpentTime/SpentTime';
 
-const Sideblog = () => {
+const Sideblog = ({ bookmark, readTime }) => {
     return (
         <div>
             <div>
-                <SpentTime></SpentTime>
+                <SpentTime readTime={readTime}></SpentTime>
             </div>
-            <h1 className='bg-indigo-100 mt-2 p-7'>Bookmarked Blogs: </h1>
-        </div>
+            <h1 className='bg-indigo-500 mt-2 p-7 '><span className='font-bold'>Bookmarked Blogs:</span> {bookmark.length} {
+                bookmark.map(bk => < div className='bg-indigo-100 mt-2 p-7' >
+
+                    {bk.blogTitle} </div>)
+            } </h1>
+        </div >
     );
 };
 

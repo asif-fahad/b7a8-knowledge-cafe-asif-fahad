@@ -7,16 +7,34 @@ import './App.css'
 
 
 const App = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [bookmark, setBookmark] = useState([])
+  const [readTime, setReadTime] = useState(0);
 
-  const handleBookMark = (bookmarkid) => {
-    console.log("bookmark", bookmarkid);
+  const handleBookMark = (id) => {
+
+    let markedItem = [];
+    const exist = bookmark.find((marked) => marked.id === id);
+    if (exist) {
+
+    }
+    else {
+      const bookmarkItem = blogs.find((item) => item.id === id);
+      markedItem = [...bookmark, bookmarkItem];
+      setBookmark(markedItem);
+    }
+
+    console.log(markedItem);
   };
 
-  const handleReadMin = (readid) => {
-    console.log("read min", readid)
+  const handleReadMin = (id) => {
+    const item = blogs.find((b) => b.id === id);
+    let totalTime = JSON.parse(readTime + item.readTime);
+    setReadTime(totalTime);
+    console.log(totalTime);
   }
 
-  const [blogs, setBlogs] = useState([]);
+
 
   useEffect(() => {
     fetch('data.json')
@@ -36,7 +54,7 @@ const App = () => {
         <Blogs blogs={blogs} handleBookMark={handleBookMark} handleReadMin={handleReadMin}></Blogs>
 
 
-        <Sideblog ></Sideblog>
+        <Sideblog bookmark={bookmark} readTime={readTime} ></Sideblog>
 
       </div>
     </div>

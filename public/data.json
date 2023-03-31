@@ -5,7 +5,7 @@
         "authorImage": "https://randomuser.me/api/portraits/men/48.jpg",
         "blogTitle": "How to get your first job as a self-taught programmer",
         "blogImage": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1680200334~exp=1680200934~hmac=a61078ac3fe3207f71449eb8f0f1f080617fe6dd27683e56db1b6cf952523797",
-        "readTime": "05",
+        "readTime": 5,
         "publishedDate": "May 14 (4 days ago)"
     },
     {
@@ -14,7 +14,7 @@
         "authorImage": "https://randomuser.me/api/portraits/men/20.jpg",
         "blogTitle": "How To Implement Bubble Sort Algorithm With JavaScript",
         "blogImage": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=740&t=st=1680200337~exp=1680200937~hmac=59b451c9ab98532aa5409fb7c2d2182be6dbdf9b618eccea6d11d189e8346246",
-        "readTime": "10",
+        "readTime": 10,
         "publishedDate": "May 13 (5 days ago)"
     },
     {
@@ -23,7 +23,7 @@
         "authorImage": "https://randomuser.me/api/portraits/men/88.jpg",
         "blogTitle": "Use ChatGPT to Build a Low Code RegEx Generator",
         "blogImage": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=740&t=st=1680200340~exp=1680200940~hmac=6ac07d6dc0cd196e09da73e72aa143101f6431cf95f3f7f3ce326edf671509bd",
-        "readTime": "12",
+        "readTime": 12,
         "publishedDate": "May 12 (6 days ago)"
     },
     {
@@ -32,7 +32,7 @@
         "authorImage": "../src/images/fahad.png",
         "blogTitle": "Why is the Second Argument in JSON.stringify() usually null?",
         "blogImage": "https://img.freepik.com/premium-photo/abstract-technology-binary-code-background_34629-592.jpg?w=900",
-        "readTime": "15",
+        "readTime": 15,
         "publishedDate": "May 11 (7 days ago)"
     }
 ]
